@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>"wikimedia-technical-task"</title>
+  </head>
+
+  <body>
+    <h1>Donor Contact Information</h1>
+    <form action='/submission' method='POST'>
+      <label for='lastname'>Last Name: </label>
+      <input type='text' id='lastname' placeholder="Enter Last Name" name='lastname'>
+      <br>
+      <br>
+      <label for='firstname'>First Name: </label>
+      <input type='text' id='firstname' placeholder="Enter First Name" name='firstname'>
+      <br>
+      <br>
+      <label for='streetaddress'>Street Address: </label>
+      <input type='text' id='streetaddress' placeholder="Enter Street Address" name='streetaddress'>
+      <br>
+      <br>
+      <label for='city'>City: </label>
+      <input type='text' id='city' placeholder="Enter City" name='city'>
+      <br>
+      <br>
+      <label for='state_region'>State/Region: </label>
+      <input type='text' id='state_region' placeholder="Enter State/Region" name='state_region'>
+      <br>
+      <br>
+      <label for='country'>Country: </label>
+      <select id='country' name='country'>
+        <!-- <option value='country'>Select Country</option>
+        <script type="text/javascript" src="util.js"></script> -->
+        <!-- <?php
+          $countries = array()
+        ?> -->
+      </select>
+      <br>
+      <br>
+      <label for='postalcode'>Postal Code: </label>
+      <input type='text' id='postalcode' placeholder="Enter postal code" name='postalcode'>
+      <br>
+      <br>
+      <label for='phone'>Phone number: </label>
+      <input type='text' id='phone' placeholder="Enter Phone number" name='phone'>
+      <br>
+      <br>
+      <label for='email'>Email: </label>
+      <input type='email' id='email' placeholder="Enter Email" name='email'>
+      <br>
+      <br>
+      <label for='perferred_form_of_contact'>Preferred form of contact: </label>
+      <select id='perferred_form_of_contact' name='perferred_form_of_contact'>
+        <option value='preference'>Select Your Preference</option>
+        <option value='phone'>phone</option>
+        <option value='email'>email</option>
+      </select>
+      <br>
+      <br>
+      <label for='perferred_form_of_payment'>Preferred form of payment: </label>
+      <select id='perferred_form_of_payment' name='perferred_form_of_payment'>
+        <option value='payment_pref'>Select Your Preference</option>
+        <option value='usd'>USD</option>
+        <option value='euro'>Euro</option>
+        <option value='bitcoin'>Bitcoin</option>
+      </select>
+      <br>
+      <br>
+      <label for='frequency'>Frequency of donation: </label>
+      <select id='frequency' name='frequency'>
+        <option value='donation_frequency'>Select Your Preference</option>
+        <option value='monthly'>Monthly</option>
+        <option value='yearly'>Yearly</option>
+        <option value='onetime'>One-time</option>
+      </select>
+      <br>
+      <br>
+      <label for='donation_amount'>Amount of donation: </label>
+      <input type='number' min="0" id='donation_amount' placeholder="Enter donation amount" name='donation_amount'>
+      <br>
+      <br>
+      <label for='comments'>Comments: </label><br>
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea -->
+      <textarea id='comments' name='comments' rows="5" cols="33"></textarea>
+      <br>
+      <input type="submit" id="submit-button" name='submit-button' value="Submit">
+    </form>
+  </body>
+
+</html>
