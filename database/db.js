@@ -13,7 +13,7 @@ console.log(process.env.DB_PASSWORD)
 
 var connection = mysql.createConnection({
   host: 'localhost',
-  //never use root in a production setting.
+  //never use root in a production setting. Is not secure.
   user: 'root',
   password: 'mySQL888',
   database: 'DONORS'

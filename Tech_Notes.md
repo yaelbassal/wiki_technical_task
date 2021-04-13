@@ -59,3 +59,16 @@ repository - rather db.
 1. fetch/ajax remote route the content of a page. index.html -- github url
 2. string swap out fs.
 3. in index.html, when document.ready, then call function. Can be in util.js
+
+# Things to think about:
+
+1. how you did/would model your mysql tables
+2. maybe more db stuff like what might need indexing
+3. what routes you could add?
+4. what testing you would add? that the data being submitted is going into mysql.
+ - Beforehand - Check that we are submitting the correct format - text is text, number is number, etc.
+ (perhaps send the user a error message if incorrect.)
+ - Check that the data is in our table.
+ - check my js functions and make sure they are returning what I want.
+
+
