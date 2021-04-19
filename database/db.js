@@ -1,13 +1,13 @@
 //Source: https://expressjs.com/en/guide/database-integration.html#mysql
 //Not currently finished - more research needed into mySQL
 
-var mysql = require('mysql')
+var mysql = require('mysql2')
 
 var connection = mysql.createConnection({
   host: 'localhost',
-  user: '',
-  password: '',
-  database: ''
+  user: 'root',
+  password: 'mySQL888',
+  database: 'DONORS'
 })
 
 connection.connect()
