@@ -1,10 +1,10 @@
 //Source: https://expressjs.com/en/guide/database-integration.html#mysql
-//Not currently finished - more research needed into mySQL
 
 var mysql = require('mysql2')
 
 var connection = mysql.createConnection({
   host: 'localhost',
+  //never use root in a production setting. Is not secure.
   user: 'root',
   password: 'mySQL888',
   database: 'DONORS'

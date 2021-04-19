@@ -2,6 +2,7 @@
 <html lang="eng">
   <head>
     <meta charset="UTF-8">
+    <!-- allows for our stylesheet to get loaded. link tag is called when the request is made from browser and reads the html file -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>"wikimedia-technical-task"</title>
   </head>
@@ -31,11 +32,6 @@
       <br>
       <label for='country'>Country: </label>
       <select id='country' name='country'>
-        <!-- <option value='country'>Select Country</option>
-        <script type="text/javascript" src="util.js"></script> -->
-        <!-- <?php
-          $countries = array()
-        ?> -->
       </select>
       <br>
       <br>
@@ -87,6 +83,8 @@
       <br>
       <input type="submit" id="submit-button" name='submit-button' value="Submit">
     </form>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
   </body>
 
 </html>
